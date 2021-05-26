@@ -19,7 +19,6 @@ public class Main
     long noOfOperators=filteredData.select("devCarrier").distinct().count();
     System.out.println("Number of Operators :"+noOfOperators);
 
-
     // Register the DataFrame as a SQL temporary view
     dataFrame.createOrReplaceTempView("placesData");
 
